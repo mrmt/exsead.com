@@ -1,0 +1,45 @@
+      #banner {
+        height: 50px; 
+        background: white url(banner.png) repeat-y scroll left top;
+      }
+      #banner2 {
+        height: 50px; 
+        background: white url(banner.png) repeat-y scroll left top;
+      }
+      #banner3 {
+        height: 50px; 
+        background: white url(banner.png) repeat-y scroll left top;
+      }
+      body {
+        margin: 0px 0px 0px 0px;
+        font-size: 16px;
+        text-shadow: 1px 2px 3px #fdd;
+        background: #fff;
+      }
+      h1 {
+        font-family: 'Reenie Beanie', arial, serif;
+        font-size: 60px;
+        margin-left: 100px;
+        margin-right: 200px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+      }
+      h2 {
+        margin-top: 40px;
+      }
+      p, dl, h2 {
+        margin-left: 100px;
+        margin-right: 200px;
+      }
+      p.spec {
+        font-family: 'Reenie Beanie', arial, serif;
+        font-size: 24pt;
+        margin-bottom: 60px;
+      }
+      dd {
+        margin-bottom: 60px;
+      }
+      a {
+        color: black;
+        text-decoration: underline;
+      }
