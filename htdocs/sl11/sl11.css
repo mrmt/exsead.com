@@ -340,7 +340,7 @@ body {
 	color: rgb(255, 255, 255);
 	font-size: 14px;
 	line-height: 24px;
-	background: rgb(37, 42, 46);
+	background: rgb(37, 42, 46); /* 252a2e */
 	text-rendering: optimizeLegibility;
 }
 
