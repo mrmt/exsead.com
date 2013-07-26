@@ -1,0 +1,19 @@
+.container {
+    margin: 20px auto;
+    padding-left: 20px;
+    padding-top: 100px;
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 10pt;
+}
+a {
+    color: white;
+}
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 40pt;
+}
+p {
+    padding-top: 20px;
+}
