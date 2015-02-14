@@ -1,6 +1,6 @@
 build:
-	bundle exec jekyll build
+	jekyll build
 serve:
-	bundle exec jekyll serve
+	jekyll serve
 install:
 	rsync -e ssh -cropgtv --delete _site/ lds.mrmt.net:/var/www/exsead.com
