@@ -1,102 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:mixi="http://mixi-platform.com/ns#"
-      lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta property="og:title"
-	  content="EX-/System of Electric Arts and Designers/" />
-    <meta property="og:description" content="EXSEAD" />
-    <title>EXSEAD</title>
-    <link rel="stylesheet" type="text/css" media="screen, print" href="slickmap.css" />
-    <meta name="google-site-verification" content="rFh79wbhchdMwzSfs0kZQuz7Faup_j7fEvKPqvpuCNE" />
-  </head>
-  <body>
-    <div class="sitemap">
-      <h1>EXSEAD</h1>
-      <h2><a href="">founded in 1986, at Tokyo</a></h2>
+---
+layout: default
+---
 
-      <p style="margin-bottom: 30pt;">
-	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://exsead.com" data-text="EXSEAD" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	<a href="http://del.icio.us/1?url=http://exsead.com"><img class="nom" src="images/de.png" alt="add this entry to del.icio.us" height="18" width="18" border="0" /></a> 
-	<a href="http://mixi.jp/share.pl" class="mixi-check-button"
-	   data-key="2e2e2136ed35b93bd7af0c85ebe08049a92406c4"
-	   data-url="http://exsead.com/"
-	   data-button="button-4">Check</a>
-	<script type="text/javascript" src="http://static.mixi.jp/js/share.js"></script>
-      </p>
+<div class="home">
 
-      <ul id="utilityNav">
-	<li><a href="">.</a></li>
-	<li><a href="">.</a></li>
-	<li><a href="">.</a></li>
-      </ul>
+  <h1 class="page-heading">Posts</h1>
 
-      <ul id="primaryNav">
-	<li id="home"><a href="">EX-</a></li>
-	<li><a href="">System</a>
-	  <ul>
-	    <li><a href="">of</a>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-	    </li>
-	  </ul>
-	</li>
-	<li><a href="">Electric</a></li>
-	<li><a href="">Arts</a>
-	  <ul>
-	    <li><a href="">and</a>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-
-	      <ul>
-		<li><a href="http://exsead.com/sl13/">Sound Leaves 13</a></li>
-		<li><a href="http://exsead.com/sl12/">Sound Leaves 12</a></li>
-		<li><a href="http://exsead.com/sl11/">Sound Leaves 11</a></li>
-		<li><a href="http://exsead.com/sl10/">Sound Leaves 10</a></li>
-		<li><a href="http://exsead.com/sl9/">Sound Leaves 9</a></li>
-		<li><a href="http://exsead.com/sl8/">Sound Leaves 8</a></li>
-		<li><a href="http://exsead.com/sl7/">Sound Leaves 7</a></li>
-		<li><a href="http://www.sfh-sound.com/soundleaves6/">Sound Leaves 6</a></li>
-		<li><a href="http://exsead.com/sl5/">Sound Leaves 5</a></li>
-		<li><a href="http://www.sfh-sound.com/soundleaves4/">Sound Leaves 4</a></li>
-	      </ul>
-
-
-
-</li>
-	  </ul>
-	</li>
-	<li><a href="">Designers</a>
-	  <ul>
-	    <li>
-	      <a href="http://matome.naver.jp/odai/2137152593735095701">EXSEAD 2013納涼会</a>
-	    </li>
-	    <li>
-	      <a href="http://matome.naver.jp/odai/2139211696323795301">EXSEAD 2014新年会</a>
-	    </li>
-	  </ul>
-	</li>
-      </ul>
-    </div>
-
-	<iframe src="http://plugins.mixi.jp/favorite.pl?href=http://exsead.com/&service_key=2e2e2136ed35b93bd7af0c85ebe08049a92406c4&show_faces=true"
-		scrolling="no"
-		frameborder="0"
-		allowTransparency="true"
-		style="border:0; overflow:hidden; width:450px; height:80px;"></iframe>
-
-
-  <script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-  try {
-  var pageTracker = _gat._getTracker("UA-9749356-1");
-  pageTracker._trackPageview();
-  } catch(err) {}</script>
-
-  </body>
-</html>
+</div>
